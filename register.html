@@ -161,71 +161,59 @@
 </header>
 
 <main>
-
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Photo Expo 2023</h1>
-        <p class="lead text-body-secondary">มหกรรมแสดงสินค้าภาพถ่ายที่ใหญ่ที่สุดในประเทศไทยประจำปี 2023</p>
-        <p>
-          <a href="register.html" class="btn btn-primary my-2">ลงทะเบียนสนใจจัดแสดงสินค้า</a>
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <div class="album py-5 bg-body-tertiary">
     <div class="container">
+        <main>
+          <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+            <h2>ลงทะเบียนสนใจจัดแสดงสินค้า</h2>
+            <p class="lead">มหกรรมแสดงสินค้าภาพถ่ายที่ใหญ่ที่สุดในประเทศไทยประจำปี 2023
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-           <img src="https://img.freepik.com/free-photo/tropical-beach_74190-188.jpg?w=1380&t=st=1692253673~exp=1692254273~hmac=a0e8d4d69c216d49bb09e01eff9e08ea458baf75369e3c487f1f18f731be0fe3">
-            <div class="card-body">
-              <p class="card-text">ภาพถ่ายเกี่ยวกับทะเล</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                    <a href="register.html"><button type="button" class="btn btn-sm btn-outline-secondary">ลงทะเบียน</button></a>
-                </div>
-                <small class="text-body-secondary">คงเหลือ 20 บูธ</small>
-              </div>
-            </div>
+
+            </p>
           </div>
-        </div>
-          <div class="col">
-            <div class="card shadow-sm">
-             <img src="https://img.freepik.com/free-photo/doi-luang-chiang-dao-mountains-sunrise-chiang-mai-thailand_335224-1400.jpg?w=1380&t=st=1692253813~exp=1692254413~hmac=8430a018b1498b41a9aa2236814c6cdf11537a3d3019eb8e8fddc5ac0a492fc9">
-              <div class="card-body">
-                <p class="card-text">ภาพถ่ายเกี่ยวกับภูเขา</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="register.html"><button type="button" class="btn btn-sm btn-outline-secondary">ลงทะเบียน</button></a>
-                </div>
-                  <small class="text-body-secondary">คงเหลือ 12 บูธ</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-             <img src="https://img.freepik.com/free-photo/beautiful-city-chongqing_1112-1595.jpg?w=1380&t=st=1692254124~exp=1692254724~hmac=fc09501611803733d709004228309a291ed36f792416a2d7702fdb8c7009fae4">
-              <div class="card-body">
-                <p class="card-text">ภาพถ่ายเกี่ยวกับเมือง</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                   <a href="register.html"><button type="button" class="btn btn-sm btn-outline-secondary">ลงทะเบียน</button></a>
+      
+          <div class="row g-5">
+
+            <div class="col-md-7 col-lg-12">
+              <form class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-sm-12">
+                    <label for="companyname" class="form-label">ชื่อบริษัท</label>
+                    <input type="text" class="form-control" id="companyname" placeholder="" value="" required>
                   </div>
-                  <small class="text-body-secondary">คงเหลือ 35 บูธ</small>
+                  <div class="col-md-12">
+                    <label for="sizeboot" class="form-label">ขนาดบูธ </label>
+                    <select class="form-select" id="sizeboot" required>
+                      <option value="">Choose...</option>
+                      <option>10x10 ฟุต</option>
+                      <option>10x15 ฟุต</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">ต้องการโต้ะนั่งในบูธ</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="table1" name="table1" value="table1" checked>
+                        <label class="form-check-label">โต๊ะกลม</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="table2" name="table2" value="table2">
+                        <label class="form-check-label">โต๊ะสี่เหลี่ยม</label>
+                      </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <label for="contactname" class="form-label">ชื่อผู้ติดต่อ</label>
+                    <input type="text" class="form-control" id="contactname" required>
+                  </div>
+                  <div class="col-sm-12">
+                    <label for="contacttel" class="form-label">เบอร์ผู้ติดต่อ</label>
+                    <input type="number" class="form-control" id="contacttel" required>
+                  </div>
                 </div>
-              </div>
+                <a href="register.html" class="btn btn-primary my-2">ลงทะเบียน</a>
+              </form>
             </div>
           </div>
-      </div>
-    </div>
-  </div>
-
-</main>
-
+        </main>
 <footer class="text-body-secondary py-5">
   <div class="container">
     <p class="float-end mb-1">
