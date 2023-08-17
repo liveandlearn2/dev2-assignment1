@@ -10,12 +10,11 @@
     <title>Photo Expo 2023</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
-
-    
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
 
     <style>
       .bd-placeholder-img {
@@ -179,7 +178,8 @@
                 <div class="row g-3">
                   <div class="col-sm-12">
                     <label for="companyname" class="form-label">ชื่อบริษัท</label>
-                    <input type="text" class="form-control" id="companyname" placeholder="" value="" required>
+                    <input type="text" class="form-control" id="companyname" name="companyname">
+                    <p style="color: red;" id="companynamevalide">ห้ามว่าง</p>
                   </div>
                   <div class="col-md-12">
                     <label for="sizeboot" class="form-label">ขนาดบูธ </label>
@@ -200,17 +200,22 @@
                         <label class="form-check-label">โต๊ะสี่เหลี่ยม</label>
                       </div>
                   </div>
+                  <div class="col-12">
+                    <label class="form-label">จำนวนเก้าอี้</label>
+                    <input  class="form-control" type="number" id="quantity" name="quantity" min="1" max="10">
+                  </div>
                   <div class="col-sm-12">
                     <label for="contactname" class="form-label">ชื่อผู้ติดต่อ</label>
                     <input type="text" class="form-control" id="contactname" required>
                   </div>
                   <div class="col-sm-12">
                     <label for="contacttel" class="form-label">เบอร์ผู้ติดต่อ</label>
-                    <input type="number" class="form-control" id="contacttel" required>
+                    <input type="number" class="form-control" id="contacttel" name="contacttel">
+                    <p style="color: red;" id="telvalide">ห้ามว่าง</p>
                   </div>
                 </div>
-                <a href="register.html" class="btn btn-primary my-2">ลงทะเบียน</a>
               </form>
+              <button class="btn btn-primary my-2">ลงทะเบียน</button>
             </div>
           </div>
         </main>
@@ -224,6 +229,6 @@
   </div>
 </footer>
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-    </body>
+<script src="register.js"></script>
+</body>
 </html>
